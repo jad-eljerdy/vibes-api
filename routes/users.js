@@ -91,7 +91,7 @@ router.put("/addpref/:user_id/:category_id", function(req,res){
   });
 });
 
-router.put("/removepref/:user_id/:category_id", function(req,res){
+router.put("/removepref/:user_id/:category_id" ,function(req,res){
     Users.findById(req.params.user_id, function(err,result){
         if(err)
             res.send(err);

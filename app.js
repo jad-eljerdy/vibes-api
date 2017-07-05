@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var stories = require('./routes/stories');
 var categories = require('./routes/categories');
 var search = require('./routes/search');
+var upload = require('./routes/pleaseupload');
 
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -34,6 +35,7 @@ app.use('/users', users);
 app.use('/stories', stories);
 app.use('/categories', categories);
 app.use('/search', search);
+app.use('/upload', upload);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
